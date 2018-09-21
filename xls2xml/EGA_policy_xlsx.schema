@@ -1,0 +1,49 @@
+#Schema file for defining validation rules for each field
+#
+#The validation rules could be found at:
+#http://docs.python-cerberus.org/en/stable/validation-rules.html
+
+DAC:
+  schema:
+    DAC_ID:
+      type: string
+      nullable: True
+      regex: '^EGAC[0-9]{11}$'
+
+Contact:
+  schema:
+    Email:
+      type: string
+      nullable: False
+      required: True
+      regex: '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+
+    Telephone_number:
+      type: string
+      nullable: False
+      required: True
+      regex: '^[0-9]{6,15}(x[0-9]{1,6})*$'
+
+    Main_contact:
+      type: number
+      nullable: True
+      allowed: [0, 1]
+
+Policy:
+  schema:
+    Policy_ID:
+      type: string
+      nullable: True
+      regex: '^EGAP[0-9]{11}$'
+
+    DAC_ID:
+      type: string
+      nullable: True
+      regex: '^EGAC[0-9]{11}$'
+
+DUO:
+  schema:
+    Policy_ID:
+      type: string
+      nullable: True
+      regex: '^EGAP[0-9]{11}$'

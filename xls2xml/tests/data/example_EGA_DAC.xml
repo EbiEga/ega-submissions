@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DAC_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/EGA.dac.xsd">
+  <DAC accession="EGAC00001000001" alias="DAC-Charles-18-09-2018-10:10:10:599-410" broker_name="EGA">
+    <TITLE>Charlie-Dot-Com-DAC</TITLE>
+    <CONTACTS>
+      <CONTACT name="Alfa Bravo" email="alfa.bravo@charlie.com" telephone_number="01223456789" organisation="Charlie Dot Com" main_contact="true"/>
+    </CONTACTS>
+    <DAC_LINKS>
+      <DAC_LINK>
+        <URL_LINK>
+          <URL>ftp://ftp.archive.org/pub/contrib/dac/Archive_Data_Access_Request.docx</URL>
+          <LABEL>EGA web</LABEL>
+        </URL_LINK>
+      </DAC_LINK>
+    </DAC_LINKS>
+    <DAC_ATTRIBUTES>
+      <DAC_ATTRIBUTE>
+        <TAG>alfa.bravo@charlie.com:</TAG>
+        <VALUE>Mr</VALUE>
+      </DAC_ATTRIBUTE>
+      <DAC_ATTRIBUTE>
+        <TAG>alfa.bravo@charlie.com:</TAG>
+        <VALUE>1 Delta Street, Echo Town, ET11AA, Foxtrot</VALUE>
+      </DAC_ATTRIBUTE>
+    </DAC_ATTRIBUTES>
+  </DAC>
+</DAC_SET>
