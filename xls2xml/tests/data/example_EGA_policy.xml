@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<POLICY_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/EGA.policy.xsd">
+  <POLICY accession="EGAP00001000001" alias="Policy-Charlie-Dot-Com-001" broker_name="EGA">
+    <TITLE>Data Access Agreement for Charlie Dot Com</TITLE>
+    <DAC_REF accession="EGAC00001000001"/>
+    <POLICY_FILE>ftp://ftp.archive.org/pub/contrib/policy/Archive_Data_Access_Policy_P00001.docx</POLICY_FILE>
+    <DATA_USES>
+      <DATA_USE ontology="DUO" code="0000007" version="2018-09-21">
+        <MODIFIER>
+          <DB>EFO</DB>
+          <ID>0001645</ID>
+        </MODIFIER>
+        <MODIFIER>
+          <DB>EFO</DB>
+          <ID>0001655</ID>
+        </MODIFIER>
+      </DATA_USE>
+      <DATA_USE ontology="DUO" code="0000014" version="2016-07-17 00:00:00">
+        <URL>http://purl.obolibrary.org/obo/duo/releases/2017-10-16/duo.owl</URL>
+      </DATA_USE>
+    </DATA_USES>
+  </POLICY>
+</POLICY_SET>
