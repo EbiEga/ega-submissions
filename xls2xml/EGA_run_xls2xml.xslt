@@ -19,6 +19,12 @@ with underscores.
              xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.run.xsd">
     <xsl:for-each select="Run">
       <RUN>
+        <xsl:if test="Run_ID!=''">
+            <xsl:attribute name="accession"><xsl:value-of select="Run_ID"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="Run_alias!=''">
+            <xsl:attribute name="alias"><xsl:value-of select="Run_alias"/></xsl:attribute>
+        </xsl:if>
         <xsl:if test="Run_date!=''">
           <xsl:attribute name="run_date"><xsl:value-of select="Run_date"/></xsl:attribute>
         </xsl:if>
@@ -29,20 +35,9 @@ with underscores.
           <TITLE><xsl:value-of select="Title"/></TITLE>
         </xsl:if>
         <EXPERIMENT_REF>
-          <xsl:if test="Run_ID!=''">
-            <xsl:attribute name="accession"><xsl:value-of select="Run_ID"/></xsl:attribute>
+          <xsl:if test="Experiment_ID!=''">
+            <xsl:attribute name="refname"><xsl:value-of select="Experiment_ID"/></xsl:attribute>
           </xsl:if>
-          <IDENTIFIERS>
-            <xsl:if test="Run_ID!=''">
-              <PRIMARY_ID><xsl:value-of select="Run_ID"/></PRIMARY_ID>
-            </xsl:if>
-            <xsl:if test="((Run_alias!='') and (Run_center!=''))">
-              <SUBMITTER_ID>
-                <xsl:attribute name="namespace"><xsl:value-of select="Run_center"/></xsl:attribute>
-                <xsl:value-of select="Run_alias"/>
-              </SUBMITTER_ID>
-            </xsl:if>
-          </IDENTIFIERS>
         </EXPERIMENT_REF>
         <xsl:variable name="file_owner_id">
           <xsl:choose>
