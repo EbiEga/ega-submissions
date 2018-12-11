@@ -38,6 +38,10 @@ with underscores.
           <TITLE><xsl:value-of select="Title"/></TITLE>
         </xsl:if>
         <STUDY_REF>
+          <xsl:attribute name="refname"><xsl:value-of select="Study_ID"/></xsl:attribute>
+          <xsl:if test="Center_name!=''">
+            <xsl:attribute name="refcenter"><xsl:value-of select="Center_name"/></xsl:attribute>
+          </xsl:if>
           <IDENTIFIERS>
             <SUBMITTER_ID>
               <xsl:attribute name="namespace"><xsl:value-of select="Center_name"/></xsl:attribute>
@@ -68,8 +72,8 @@ with underscores.
                   </xsl:when>
                   <xsl:otherwise>
                     <SUBMITTER_ID>
-                      <xsl:attribute name="namespace"><xsl:value-of select="Center_name"/>
-                      </xsl:attribute><xsl:value-of select="Sample_alias"/>
+                      <xsl:attribute name="namespace"><xsl:value-of select="Center_name"/></xsl:attribute>
+                      <xsl:value-of select="Sample_alias"/>
                     </SUBMITTER_ID>
                   </xsl:otherwise>
                 </xsl:choose>
