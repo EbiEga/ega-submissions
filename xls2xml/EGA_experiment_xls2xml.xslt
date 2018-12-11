@@ -48,6 +48,18 @@ with underscores.
         <DESIGN>
           <DESIGN_DESCRIPTION><xsl:value-of select="Design_description"/></DESIGN_DESCRIPTION>
           <SAMPLE_DESCRIPTOR>
+            <xsl:for-each select="/ResultSet/SampleSet/Sample[Experiment_ID=$experiment_id]">
+              <xsl:variable name="sample_refname">
+                <xsl:choose>
+                  <xsl:when test="Sample_alias!=''"><xsl:value-of select="Sample_alias"/></xsl:when>
+                  <xsl:otherwise><xsl:value-of select="Sample_ID"/></xsl:otherwise>
+                </xsl:choose>
+              </xsl:variable>
+              <xsl:attribute name="refname"><xsl:value-of select="$sample_refname"/></xsl:attribute>
+              <xsl:if test="Center_name!=''">
+                <xsl:attribute name="refcenter"><xsl:value-of select="Center_name"/></xsl:attribute>
+              </xsl:if>
+            </xsl:for-each>
             <IDENTIFIERS>
               <xsl:for-each select="/ResultSet/SampleSet/Sample[Experiment_ID=$experiment_id]">
                 <xsl:choose>
@@ -63,6 +75,7 @@ with underscores.
                 </xsl:choose>
               </xsl:for-each>
             </IDENTIFIERS>
+
           </SAMPLE_DESCRIPTOR>
           <LIBRARY_DESCRIPTOR>
             <xsl:if test="Library_name!=''">

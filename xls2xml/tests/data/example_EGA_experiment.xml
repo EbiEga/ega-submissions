@@ -9,7 +9,7 @@
     </STUDY_REF>
     <DESIGN>
       <DESIGN_DESCRIPTION/>
-      <SAMPLE_DESCRIPTOR>
+      <SAMPLE_DESCRIPTOR refname="Samp001">
         <IDENTIFIERS>
           <SUBMITTER_ID namespace="">Samp001</SUBMITTER_ID>
         </IDENTIFIERS>
@@ -39,7 +39,7 @@
     </STUDY_REF>
     <DESIGN>
       <DESIGN_DESCRIPTION/>
-      <SAMPLE_DESCRIPTOR>
+      <SAMPLE_DESCRIPTOR refname="Samp002">
         <IDENTIFIERS>
           <SUBMITTER_ID namespace="">Samp002</SUBMITTER_ID>
         </IDENTIFIERS>
@@ -69,7 +69,7 @@
     </STUDY_REF>
     <DESIGN>
       <DESIGN_DESCRIPTION/>
-      <SAMPLE_DESCRIPTOR>
+      <SAMPLE_DESCRIPTOR refname="Samp003">
         <IDENTIFIERS>
           <SUBMITTER_ID namespace="">Samp003</SUBMITTER_ID>
         </IDENTIFIERS>
@@ -99,7 +99,7 @@
     </STUDY_REF>
     <DESIGN>
       <DESIGN_DESCRIPTION/>
-      <SAMPLE_DESCRIPTOR>
+      <SAMPLE_DESCRIPTOR refname="Samp004">
         <IDENTIFIERS>
           <SUBMITTER_ID namespace="">Samp004</SUBMITTER_ID>
         </IDENTIFIERS>
