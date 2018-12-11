@@ -79,7 +79,7 @@ with underscores.
             <xsl:if test="regexp:test(name(.), '^Characteristic_-_[a-zA-Z0-9_]*')">
               <xsl:if test=".!=''">
                 <SAMPLE_ATTRIBUTE>
-                  <TAG><xsl:value-of select="name(.)"/></TAG>
+                  <TAG><xsl:value-of select="substring(name(.), string-length('Characteristic_-_')+1)"/></TAG>
                   <VALUE><xsl:value-of select="."/></VALUE>
                 </SAMPLE_ATTRIBUTE>
               </xsl:if>
