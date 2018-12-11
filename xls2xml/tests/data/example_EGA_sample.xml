@@ -16,15 +16,15 @@
         <VALUE>HD</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Subject_ID</TAG>
+        <TAG>subject_id</TAG>
         <VALUE>Samp001</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>City</TAG>
+        <TAG>city</TAG>
         <VALUE>Leiden</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>PI_s_</TAG>
+        <TAG>pi_s_</TAG>
         <VALUE>van_RoonMom</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
@@ -45,31 +45,31 @@
         <VALUE>Unaffected_family_member</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Subject_ID</TAG>
+        <TAG>subject_id</TAG>
         <VALUE>Samp002</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>City</TAG>
+        <TAG>city</TAG>
         <VALUE>Cologne</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>This_patient_is_the_PARENT_of_patient_with_ID</TAG>
+        <TAG>this_patient_is_the_parent_of_patient_with_id</TAG>
         <VALUE>Samp004</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Mode_of_inheritance</TAG>
+        <TAG>mode_of_inheritance</TAG>
         <VALUE>sporadic</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Consanguinity</TAG>
+        <TAG>consanguinity</TAG>
         <VALUE>No</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>deCODE_WGS_barcode</TAG>
+        <TAG>decode_wgs_barcode</TAG>
         <VALUE>Samp002</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>PI_s_</TAG>
+        <TAG>pi_s_</TAG>
         <VALUE>Wirth</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
@@ -90,31 +90,31 @@
         <VALUE>Unaffected_family_member</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Subject_ID</TAG>
+        <TAG>subject_id</TAG>
         <VALUE>Samp003</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>City</TAG>
+        <TAG>city</TAG>
         <VALUE>Cologne</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>This_patient_is_the_PARENT_of_patient_with_ID</TAG>
+        <TAG>this_patient_is_the_parent_of_patient_with_id</TAG>
         <VALUE>Samp004</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Mode_of_inheritance</TAG>
+        <TAG>mode_of_inheritance</TAG>
         <VALUE>sporadic</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Consanguinity</TAG>
+        <TAG>consanguinity</TAG>
         <VALUE>No</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>deCODE_WGS_barcode</TAG>
+        <TAG>decode_wgs_barcode</TAG>
         <VALUE>Samp003</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>PI_s_</TAG>
+        <TAG>pi_s_</TAG>
         <VALUE>Wirth</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
@@ -135,43 +135,43 @@
         <VALUE>SMA_LMND</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Panel_number</TAG>
+        <TAG>panel_number</TAG>
         <VALUE>Panel001</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Case_solved</TAG>
+        <TAG>case_solved</TAG>
         <VALUE>yes</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Gene_ID</TAG>
+        <TAG>gene_id</TAG>
         <VALUE>ACTA1</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Subject_ID</TAG>
+        <TAG>subject_id</TAG>
         <VALUE>Samp004</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>City</TAG>
+        <TAG>city</TAG>
         <VALUE>Cologne</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>This_patient_is_the_CHILD_of_patient_with_ID</TAG>
+        <TAG>this_patient_is_the_child_of_patient_with_id</TAG>
         <VALUE>Samp002,Samp003</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Mode_of_inheritance</TAG>
+        <TAG>mode_of_inheritance</TAG>
         <VALUE>Sporadic</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>Consanguinity</TAG>
+        <TAG>consanguinity</TAG>
         <VALUE>No</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>deCODE_WGS_barcode</TAG>
+        <TAG>decode_wgs_barcode</TAG>
         <VALUE>Samp004</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
-        <TAG>PI_s_</TAG>
+        <TAG>pi_s_</TAG>
         <VALUE>Wirth</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
