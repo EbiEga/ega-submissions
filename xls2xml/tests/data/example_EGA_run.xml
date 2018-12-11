@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RUN_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.run.xsd">
   <RUN alias="Run001" run_center="LUMC">
-    <TITLE>Run001</TITLE>
+    <TITLE>HDRNAseq Run001</TITLE>
     <EXPERIMENT_REF refname="Exp001"/>
     <DATA_BLOCK>
       <FILES>
@@ -11,7 +11,7 @@
     </DATA_BLOCK>
   </RUN>
   <RUN alias="Run002" run_center="UK_Cologne">
-    <TITLE>Run002</TITLE>
+    <TITLE>SMA_LMND_WGS Run002</TITLE>
     <EXPERIMENT_REF refname="Exp002"/>
     <DATA_BLOCK>
       <FILES>
@@ -20,7 +20,7 @@
     </DATA_BLOCK>
   </RUN>
   <RUN alias="Run003" run_center="UK_Cologne">
-    <TITLE>Run003</TITLE>
+    <TITLE>SMA_LMND_WGS Run003</TITLE>
     <EXPERIMENT_REF refname="Exp003"/>
     <DATA_BLOCK>
       <FILES>
@@ -29,7 +29,7 @@
     </DATA_BLOCK>
   </RUN>
   <RUN alias="Run004" run_center="UK_Cologne">
-    <TITLE>Run004</TITLE>
+    <TITLE>SMA_LMND_WGS Run004</TITLE>
     <EXPERIMENT_REF refname="Exp004"/>
     <DATA_BLOCK>
       <FILES>

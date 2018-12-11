@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SAMPLE_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.sample.xsd">
   <SAMPLE alias="Samp001">
-    <TITLE>Samp001</TITLE>
+    <TITLE>HDRseq Samp001</TITLE>
     <SAMPLE_NAME>
       <TAXON_ID>9606</TAXON_ID>
     </SAMPLE_NAME>
@@ -30,7 +30,7 @@
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
   <SAMPLE alias="Samp002">
-    <TITLE>Samp002</TITLE>
+    <TITLE>SMA_LMND_WGS Samp002</TITLE>
     <SAMPLE_NAME>
       <TAXON_ID>9606</TAXON_ID>
     </SAMPLE_NAME>
@@ -75,7 +75,7 @@
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
   <SAMPLE alias="Samp003">
-    <TITLE>Samp003</TITLE>
+    <TITLE>SMA_LMND_WGS Samp003</TITLE>
     <SAMPLE_NAME>
       <TAXON_ID>9606</TAXON_ID>
     </SAMPLE_NAME>
@@ -120,7 +120,7 @@
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
   <SAMPLE alias="Samp004">
-    <TITLE>Samp004</TITLE>
+    <TITLE>SMA_LMND_WGS Samp004</TITLE>
     <SAMPLE_NAME>
       <TAXON_ID>9606</TAXON_ID>
     </SAMPLE_NAME>
