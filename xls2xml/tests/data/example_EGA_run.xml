@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RUN_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.run.xsd">
-  <RUN alias="Run001" run_center="LUMC">
+  <RUN alias="Run001" center_name="LUMC">
     <TITLE>HDRNAseq Run001</TITLE>
-    <EXPERIMENT_REF refname="Exp001"/>
+    <EXPERIMENT_REF refname="Exp001" refcenter="LUMC"/>
     <DATA_BLOCK>
       <FILES>
         <FILE filename="FastQs/Samp001.R1.fastq.gz.gpg" filetype="fastq" checksum_method="MD5" checksum="e1c6eb74a68a89d38304120f6be927f4" unencrypted_checksum="60238a464a4f6a641af735ddf1e05c02"/>
@@ -10,27 +10,27 @@
       </FILES>
     </DATA_BLOCK>
   </RUN>
-  <RUN alias="Run002" run_center="UK_Cologne">
+  <RUN alias="Run002" center_name="UK_Cologne">
     <TITLE>SMA_LMND_WGS Run002</TITLE>
-    <EXPERIMENT_REF refname="Exp002"/>
+    <EXPERIMENT_REF refname="Exp002" refcenter="UK_Cologne"/>
     <DATA_BLOCK>
       <FILES>
         <FILE filename="BAMs/Samp002.bam.gpg" filetype="bam" checksum_method="MD5" checksum="47683b9ded6c572cd5faaa32614dae53" unencrypted_checksum="8644c15a79d8351bcef0022b864610d9"/>
       </FILES>
     </DATA_BLOCK>
   </RUN>
-  <RUN alias="Run003" run_center="UK_Cologne">
+  <RUN alias="Run003" center_name="UK_Cologne">
     <TITLE>SMA_LMND_WGS Run003</TITLE>
-    <EXPERIMENT_REF refname="Exp003"/>
+    <EXPERIMENT_REF refname="Exp003" refcenter="UK_Cologne"/>
     <DATA_BLOCK>
       <FILES>
         <FILE filename="BAMs/Samp003.bam.gpg" filetype="bam" checksum_method="MD5" checksum="a81b91da1b48fb47c720666bdc8fbc35" unencrypted_checksum="eda6c0fca14324ae065c1348e72b988b"/>
       </FILES>
     </DATA_BLOCK>
   </RUN>
-  <RUN alias="Run004" run_center="UK_Cologne">
+  <RUN alias="Run004" center_name="UK_Cologne">
     <TITLE>SMA_LMND_WGS Run004</TITLE>
-    <EXPERIMENT_REF refname="Exp004"/>
+    <EXPERIMENT_REF refname="Exp004" refcenter="UK_Cologne"/>
     <DATA_BLOCK>
       <FILES>
         <FILE filename="BAMs/Samp004.bam.gpg" filetype="bam" checksum_method="MD5" checksum="8c7527b03d07afbb20515d43bf43fbe6" unencrypted_checksum="5126fe58263982b3167c6970ceb0d1b1"/>

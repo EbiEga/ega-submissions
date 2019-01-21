@@ -18,34 +18,34 @@ with underscores.
   <RUN_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.run.xsd">
     <xsl:for-each select="Run">
-      <RUN>
-        <xsl:if test="Run_ID!=''">
+      <xsl:variable name="file_owner_id">
+        <xsl:choose>
+          <xsl:when test="Run_ID!=''"><xsl:value-of select="Run_ID"/></xsl:when>
+          <xsl:otherwise><xsl:value-of select="Run_alias"/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:if test="count(//ResultSet/FileSet/File[File_owner='RUN'][File_owner_ID=$file_owner_id])>0">
+        <RUN>
+          <xsl:if test="Run_ID!=''">
             <xsl:attribute name="accession"><xsl:value-of select="Run_ID"/></xsl:attribute>
-        </xsl:if>
-        <xsl:if test="Run_alias!=''">
-            <xsl:attribute name="alias"><xsl:value-of select="Run_alias"/></xsl:attribute>
-        </xsl:if>
-        <xsl:if test="Run_date!=''">
-          <xsl:attribute name="run_date"><xsl:value-of select="Run_date"/></xsl:attribute>
-        </xsl:if>
-        <xsl:if test="Run_center!=''">
-          <xsl:attribute name="run_center"><xsl:value-of select="Run_center"/></xsl:attribute>
-        </xsl:if>
-        <xsl:if test="Title!=''">
-          <TITLE><xsl:value-of select="Title"/></TITLE>
-        </xsl:if>
-        <EXPERIMENT_REF>
-          <xsl:if test="Experiment_ID!=''">
-            <xsl:attribute name="refname"><xsl:value-of select="Experiment_ID"/></xsl:attribute>
           </xsl:if>
-        </EXPERIMENT_REF>
-        <xsl:variable name="file_owner_id">
-          <xsl:choose>
-            <xsl:when test="Run_ID!=''"><xsl:value-of select="Run_ID"/></xsl:when>
-            <xsl:otherwise><xsl:value-of select="Run_alias"/></xsl:otherwise>
-          </xsl:choose>
-        </xsl:variable>
-        <xsl:if test="count(//ResultSet/FileSet/File[File_owner='RUN'][File_owner_ID=$file_owner_id])>0">
+          <xsl:if test="Run_alias!=''">
+            <xsl:attribute name="alias"><xsl:value-of select="Run_alias"/></xsl:attribute>
+          </xsl:if>
+          <xsl:if test="Run_center!=''">
+            <xsl:attribute name="center_name"><xsl:value-of select="Run_center"/></xsl:attribute>
+          </xsl:if>
+          <xsl:if test="Title!=''">
+            <TITLE><xsl:value-of select="Title"/></TITLE>
+          </xsl:if>
+          <EXPERIMENT_REF>
+            <xsl:if test="Experiment_ID!=''">
+              <xsl:attribute name="refname"><xsl:value-of select="Experiment_ID"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="Run_center!=''">
+              <xsl:attribute name="refcenter"><xsl:value-of select="Run_center"/></xsl:attribute>
+            </xsl:if>
+          </EXPERIMENT_REF>
           <DATA_BLOCK>
             <FILES>
               <xsl:for-each select="/ResultSet/FileSet/File[File_owner='RUN'][File_owner_ID=$file_owner_id]">
@@ -74,18 +74,18 @@ with underscores.
               </xsl:for-each>
             </FILES>
           </DATA_BLOCK>
-        </xsl:if>
-        <xsl:if test="Run_links!=''">
-          <RUN_LINKS>
-            <RUN_LINK>
-              <URL_LINK>
-                <LABEL>Run link</LABEL>
-                <URL><xsl:value-of select="Run_links"/></URL>
-              </URL_LINK>
-            </RUN_LINK>
-          </RUN_LINKS>
-        </xsl:if>
-      </RUN>
+          <xsl:if test="Run_links!=''">
+            <RUN_LINKS>
+              <RUN_LINK>
+                <URL_LINK>
+                  <LABEL>Run link</LABEL>
+                  <URL><xsl:value-of select="Run_links"/></URL>
+                </URL_LINK>
+              </RUN_LINK>
+            </RUN_LINKS>
+          </xsl:if>
+        </RUN>
+      </xsl:if>
     </xsl:for-each>
   </RUN_SET>
 </xsl:template>

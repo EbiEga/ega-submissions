@@ -38,7 +38,7 @@ with underscores.
           <TITLE><xsl:value-of select="Title"/></TITLE>
         </xsl:if>
         <STUDY_REF>
-          <xsl:attribute name="refname"><xsl:value-of select="Study_ID"/></xsl:attribute>
+          <xsl:attribute name="accession"><xsl:value-of select="Study_ID"/></xsl:attribute>
           <xsl:if test="Center_name!=''">
             <xsl:attribute name="refcenter"><xsl:value-of select="Center_name"/></xsl:attribute>
           </xsl:if>

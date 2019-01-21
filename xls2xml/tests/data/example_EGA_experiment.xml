@@ -2,7 +2,7 @@
 <EXPERIMENT_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.experiment.xsd">
   <EXPERIMENT alias="Exp001" center_name="LUMC">
     <TITLE>HDRNAseq Exp001</TITLE>
-    <STUDY_REF refname="Study_Huntingtons_Disease" refcenter="LUMC">
+    <STUDY_REF accession="Study_Huntingtons_Disease" refcenter="LUMC">
       <IDENTIFIERS>
         <SUBMITTER_ID namespace="LUMC">Study_Huntingtons_Disease</SUBMITTER_ID>
       </IDENTIFIERS>
@@ -32,7 +32,7 @@
   </EXPERIMENT>
   <EXPERIMENT alias="Exp002" center_name="UK_Cologne">
     <TITLE>SMA_LMND_WGS Exp002</TITLE>
-    <STUDY_REF refname="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
+    <STUDY_REF accession="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
       <IDENTIFIERS>
         <SUBMITTER_ID namespace="UK_Cologne">Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease</SUBMITTER_ID>
       </IDENTIFIERS>
@@ -62,7 +62,7 @@
   </EXPERIMENT>
   <EXPERIMENT alias="Exp003" center_name="UK_Cologne">
     <TITLE>SMA_LMND_WGS Exp003</TITLE>
-    <STUDY_REF refname="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
+    <STUDY_REF accession="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
       <IDENTIFIERS>
         <SUBMITTER_ID namespace="UK_Cologne">Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease</SUBMITTER_ID>
       </IDENTIFIERS>
@@ -92,7 +92,7 @@
   </EXPERIMENT>
   <EXPERIMENT alias="Exp004" center_name="UK_Cologne">
     <TITLE>SMA_LMND_WGS Exp004</TITLE>
-    <STUDY_REF refname="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
+    <STUDY_REF accession="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
       <IDENTIFIERS>
         <SUBMITTER_ID namespace="UK_Cologne">Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease</SUBMITTER_ID>
       </IDENTIFIERS>
