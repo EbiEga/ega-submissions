@@ -1,0 +1,167 @@
+#Schema file for defining validation rules for each field
+#
+#The validation rules could be found at:
+#http://docs.python-cerberus.org/en/stable/validation-rules.html
+
+Experiment:
+  schema:
+    Experiment_ID:
+      type: string
+      nullable: True
+      regex: '^[a-zA-Z0-9]+$'
+
+    Library_strategy:
+      type: string
+      nullable: False
+      allowed: ['AMPLICON', 'ATAC-seq', 'Bisulfite-Seq', 'CLONE', 'CLONEEND', 'CTS', 'ChIA-PET',
+                'ChIP-Seq', 'DNase-Hypersensitivity', 'EST', 'FAIRE-seq', 'FINISHING', 'FL-cDNA',
+                'Hi-C', 'MBD-Seq', 'MNase-Seq', 'MRE-Seq', 'MeDIP-Seq', 'POOLCLONE', 'RAD-Seq',
+                'RIP-Seq', 'RNA-Seq', 'SELEX', 'Synthetic-Long-Read', 'Targeted-Capture',
+                'Tethered Chromatin Conformation Capture', 'Tn-Seq', 'VALIDATION', 'WCS', 'WGA', 'WGS', 'WXS',
+                'miRNA-Seq', 'ncRNA-Seq', 'ssRNA-seq', 'OTHER']
+
+    Library_source:
+      type: string
+      nullable: False
+      allowed: ['GENOMIC', 'GENOMIC SINGLE CELL', 'METAGENOMIC', 'METATRANSCRIPTOMIC', 'SYNTHETIC',
+                'TRANSCRIPTOMIC', 'TRANSCRIPTOMIC SINGLE CELL', 'VIRAL', 'OTHER']
+
+    Library_selection:
+      type: string
+      nullable: False
+      allowed: ['5-methylcytidine antibody', 'CAGE', 'ChIP', 'ChIP-Seq', 'DNase', 'HMPR', 'Hybrid Selection',
+                'Inverse rRNA', 'Inverse rRNA selection', 'MBD2 protein methyl-CpG binding domain', 'MDA', 'MF',
+                'MNase', 'MSLL', 'Oligo-dT', 'PCR', 'PolyA', 'RACE', 'RANDOM', 'RANDOM', 'RT-PCR',
+                'Reduced Representation', 'Restriction Digest', 'cDNA', 'cDNA_oligo_dT', 'cDNA_randomPriming',
+                'padlock probes capture method', 'repeat fractionation', 'size fractionation', 'unspecified', 'other']
+
+    Library_layout:
+      type: string
+      nullable: True
+      allowed: ['SINGLE', 'PAIRED']
+
+    Library_nominal_length (insert size):
+      type: number
+      nullable: True
+      min: 1
+
+    Library_nominal_length_standard_deviation:
+      type: number
+      nullable: True
+
+    Platform:
+      type: string
+      nullable: False
+      allowed: ['ABI_SOLID', 'BGISEQ', 'CAPILLARY', 'COMPLETE_GENOMICS', 'HELICOS', 'ILLUMINA',
+                'ION_TORRENT', 'LS454', 'OXFORD_NANOPORE', 'PACBIO_SMRT']
+
+    Instrument_model:
+      type: string
+      nullable: False
+      oneof: [
+              { 'dependencies' : { 'Platform' : 'ABI_SOLID' },
+                'allowed' : ['AB SOLiD System', 'AB SOLiD System 2.0', 'AB SOLiD System 3.0', 'AB SOLiD 3 Plus System',
+                            'AB SOLiD 4 System', 'AB SOLiD 4hq System', 'AB SOLiD PI System', 'AB 5500 Genetic Analyzer',
+                            'AB 5500xl Genetic Analyzer', 'AB 5500xl-W Genetic Analysis System', 'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'BGISEQ' },
+                'allowed' : ['BGISEQ-500']
+              },
+              { 'dependencies' : { 'Platform' : 'CAPILLARY' },
+                'allowed' : ['AB 3730xL Genetic Analyzer', 'AB 3730 Genetic Analyzer', 'AB 3500xL Genetic Analyzer',
+                            'AB 3500 Genetic Analyzer', 'AB 3130xL Genetic Analyzer', 'AB 3130 Genetic Analyzer',
+                            'AB 310 Genetic Analyzer', 'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'COMPLETE_GENOMICS' },
+                'allowed' : ['Complete Genomics', 'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'HELICOS' },
+                'allowed' : ['Helicos HeliScope', 'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'ILLUMINA' },
+                'allowed' : ['HiSeq X Five', 'HiSeq X Five', 'HiSeq X Ten', 'Illumina Genome Analyzer',
+                            'Illumina Genome Analyzer II', 'Illumina Genome Analyzer IIx', 'Illumina HiScanSQ',
+                            'Illumina HiSeq 1000', 'Illumina HiSeq 1500', 'Illumina HiSeq 2000', 'Illumina HiSeq 2500',
+                            'Illumina HiSeq 3000', 'Illumina HiSeq 4000', 'Illumina MiSeq', 'Illumina MiniSeq',
+                            'Illumina NovaSeq 6000', 'NextSeq 500', 'NextSeq 550', 'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'ION_TORRENT' },
+                'allowed' : ['Ion Torrent PGM', 'Ion Torrent Proton', 'Ion Torrent S5', 'Ion Torrent S5 XL',
+                            'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'LS454' },
+                'allowed' : ['454 GS', '454 GS 20', '454 GS FLX', '454 GS FLX+', '454 GS FLX Titanium', '454 GS Junior',
+                            'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'OXFORD_NANOPORE' },
+                'allowed' : ['MinION', 'GridION', 'PromethION', 'unspecified']
+              },
+              { 'dependencies' : { 'Platform' : 'PACBIO_SMRT' },
+                'allowed' : ['PacBio RS', 'PacBio RS II', 'Sequel', 'unspecified']
+              }
+            ]
+
+Run:
+  schema:
+    Run_ID:
+      type: string
+      nullable: True
+      regex: '^[a-zA-Z0-9]+$'
+
+    Experiment_ID:
+      type: string
+      nullable: False
+      regex: '^[a-zA-Z0-9]+$'
+
+    Dataset_ID:
+      type: string
+      nullable: True
+      regex: '^[a-zA-Z0-9]+$'
+
+File:
+  schema:
+    File_name:
+      type: string
+      nullable: False
+      required: True
+
+    File_type:
+      type: string
+      nullable: False
+      required: True
+      oneof: [
+              { 'dependencies' : { 'File_owner' : 'RUN' },
+                'allowed' : ['454_native', '454_native_qual', '454_native_seq', 'CompleteGenomics_native',
+                            'Helicos_native', 'Illumina_native', 'Illumina_native_int', 'Illumina_native_prb',
+                            'Illumina_native_qseq', 'Illumina_native_scarf', 'Illumina_native_seq',
+                            'OxfordNanopore_native', 'PacBio_HDF5', 'SOLiD_native', 'SOLiD_native_csfasta',
+                            'SOLiD_native_qual', 'bam', 'cram', 'fasta', 'fastq', 'sff', 'sra', 'srf', 'tab']
+              },
+              { 'dependencies' : { 'File_owner' : 'ANALYSIS' },
+                'allowed' : ['BioNano_native', 'Kallisto_native', 'agp', 'bai', 'bam', 'bcf', 'bed', 'chromosome_list',
+                            'crai', 'cram', 'fasta', 'fastq', 'flatfile', 'gff', 'info', 'manifest', 'phenotype_file',
+                            'readme_file', 'sample_list', 'tab', 'tabix', 'unlocalised_list', 'vcf', 'vcf_aggregate',
+                            'wig', 'other']
+              }
+      ]
+
+    Checksum_method:
+      type: string
+      nullable: True
+      allowed: ['MD5', 'SHA-256']
+
+    File_owner:
+      type: string
+      nullable: False
+      required: True
+      allowed: ['RUN', 'ANALYSIS']
+
+Sample:
+  schema:
+    Gender:
+      type: string
+      allowed: ['male', 'female', 'unknown']
+
+    Taxon_id:
+      type: number
+      nullable: False

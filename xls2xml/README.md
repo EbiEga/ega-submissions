@@ -31,11 +31,18 @@ You can validate the submission xlsx file and generate XML objects using the exa
 cd ega-submissions/xls2xml
 source ../../amp-t2d-submissions/xls2xml/venv/bin/activate
 # validating the submission xlsx file
-python ../../amp-t2d-submissions/xls2xml/xls2xml/validate_xls.py --conf EGA_policy_xlsx.conf --schema EGA_policy_xlsx.schema tests/data/example_EGA_policy.V1.0.xlsx 
+python ../../amp-t2d-submissions/xls2xml/xls2xml/validate_xls.py --conf EGA_policy_xlsx.conf --schema EGA_policy_xlsx.schema tests/data/example_EGA_policy.V1.0.xlsx
+python ../../amp-t2d-submissions/xls2xml/xls2xml/validate_xls.py --conf EGA_submission_xlsx.conf --schema EGA_submission_xlsx.schema tests/data/example_EGA_submission.V5.xlsx 
 # generating EGA DAC xml
 python ../../amp-t2d-submissions/xls2xml/xls2xml/xls2xml.py --conf EGA_policy_xlsx.conf --schema EGA_policy_xlsx.schema --conf-key DAC,Contact --xslt EGA_policy_xls2xml.xslt tests/data/example_EGA_policy.V1.0.xlsx  output_EGA_DAC.xml
 # generating EGA policy xml
 python ../../amp-t2d-submissions/xls2xml/xls2xml/xls2xml.py --conf EGA_policy_xlsx.conf --schema EGA_policy_xlsx.schema --conf-key Policy,DUO --xslt EGA_policy_xls2xml.xslt tests/data/example_EGA_policy.V1.0.xlsx  output_EGA_policy.xml
+# generating EGA experiment xml
+python ../../amp-t2d-submissions/xls2xml/xls2xml/xls2xml.py --conf EGA_submission_xlsx.conf --schema EGA_submission_xlsx.schema --conf-key Experiment,Sample --xslt EGA_experiment_xls2xml.xslt tests/data/example_EGA_submission.V5.xlsx output_EGA_experiment.xml
+# generating EGA run xml
+python ../../amp-t2d-submissions/xls2xml/xls2xml/xls2xml.py --conf EGA_submission_xlsx.conf --schema EGA_submission_xlsx.schema --conf-key Run,File --xslt EGA_run_xls2xml.xslt tests/data/example_EGA_submission.V5.xlsx output_EGA_run.xml
+# generating EGA sample xml
+python ../../amp-t2d-submissions/xls2xml/xls2xml/xls2xml.py --conf EGA_submission_xlsx.conf --schema EGA_submission_xlsx.schema --conf-key Sample --xslt EGA_sample_xls2xml.xslt tests/data/example_EGA_submission.V5.xlsx output_EGA_sample.xml
 deactivate
 ```
 After this, you will find the XML files are generated in output_*.xml

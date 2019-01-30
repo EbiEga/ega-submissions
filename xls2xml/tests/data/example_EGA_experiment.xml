@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EXPERIMENT_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.experiment.xsd">
+  <EXPERIMENT alias="Exp001" center_name="LUMC">
+    <TITLE>HDRNAseq Exp001</TITLE>
+    <STUDY_REF accession="Study_Huntingtons_Disease" refcenter="LUMC">
+      <IDENTIFIERS>
+        <SUBMITTER_ID namespace="LUMC">Study_Huntingtons_Disease</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </STUDY_REF>
+    <DESIGN>
+      <DESIGN_DESCRIPTION/>
+      <SAMPLE_DESCRIPTOR refname="Samp001">
+        <IDENTIFIERS>
+          <SUBMITTER_ID namespace="">Samp001</SUBMITTER_ID>
+        </IDENTIFIERS>
+      </SAMPLE_DESCRIPTOR>
+      <LIBRARY_DESCRIPTOR>
+        <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+        <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+        <LIBRARY_SELECTION>Oligo-dT</LIBRARY_SELECTION>
+        <LIBRARY_LAYOUT>
+          <PAIRED NOMINAL_LENGTH="300"/>
+        </LIBRARY_LAYOUT>
+        <LIBRARY_CONSTRUCTION_PROTOCOL>TruSeq_RNA_v2</LIBRARY_CONSTRUCTION_PROTOCOL>
+      </LIBRARY_DESCRIPTOR>
+    </DESIGN>
+    <PLATFORM>
+      <ILLUMINA>
+        <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+      </ILLUMINA>
+    </PLATFORM>
+  </EXPERIMENT>
+  <EXPERIMENT alias="Exp002" center_name="UK_Cologne">
+    <TITLE>SMA_LMND_WGS Exp002</TITLE>
+    <STUDY_REF accession="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
+      <IDENTIFIERS>
+        <SUBMITTER_ID namespace="UK_Cologne">Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </STUDY_REF>
+    <DESIGN>
+      <DESIGN_DESCRIPTION/>
+      <SAMPLE_DESCRIPTOR refname="Samp002">
+        <IDENTIFIERS>
+          <SUBMITTER_ID namespace="">Samp002</SUBMITTER_ID>
+        </IDENTIFIERS>
+      </SAMPLE_DESCRIPTOR>
+      <LIBRARY_DESCRIPTOR>
+        <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+        <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+        <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+        <LIBRARY_LAYOUT>
+          <PAIRED NOMINAL_LENGTH="450"/>
+        </LIBRARY_LAYOUT>
+        <LIBRARY_CONSTRUCTION_PROTOCOL>TruSeq_PCRfree</LIBRARY_CONSTRUCTION_PROTOCOL>
+      </LIBRARY_DESCRIPTOR>
+    </DESIGN>
+    <PLATFORM>
+      <ILLUMINA>
+        <INSTRUMENT_MODEL>HiSeq X Ten</INSTRUMENT_MODEL>
+      </ILLUMINA>
+    </PLATFORM>
+  </EXPERIMENT>
+  <EXPERIMENT alias="Exp003" center_name="UK_Cologne">
+    <TITLE>SMA_LMND_WGS Exp003</TITLE>
+    <STUDY_REF accession="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
+      <IDENTIFIERS>
+        <SUBMITTER_ID namespace="UK_Cologne">Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </STUDY_REF>
+    <DESIGN>
+      <DESIGN_DESCRIPTION/>
+      <SAMPLE_DESCRIPTOR refname="Samp003">
+        <IDENTIFIERS>
+          <SUBMITTER_ID namespace="">Samp003</SUBMITTER_ID>
+        </IDENTIFIERS>
+      </SAMPLE_DESCRIPTOR>
+      <LIBRARY_DESCRIPTOR>
+        <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+        <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+        <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+        <LIBRARY_LAYOUT>
+          <PAIRED NOMINAL_LENGTH="450"/>
+        </LIBRARY_LAYOUT>
+        <LIBRARY_CONSTRUCTION_PROTOCOL>TruSeq_PCRfree</LIBRARY_CONSTRUCTION_PROTOCOL>
+      </LIBRARY_DESCRIPTOR>
+    </DESIGN>
+    <PLATFORM>
+      <ILLUMINA>
+        <INSTRUMENT_MODEL>HiSeq X Ten</INSTRUMENT_MODEL>
+      </ILLUMINA>
+    </PLATFORM>
+  </EXPERIMENT>
+  <EXPERIMENT alias="Exp004" center_name="UK_Cologne">
+    <TITLE>SMA_LMND_WGS Exp004</TITLE>
+    <STUDY_REF accession="Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease" refcenter="UK_Cologne">
+      <IDENTIFIERS>
+        <SUBMITTER_ID namespace="UK_Cologne">Study_Spinal_Muscular_Atrophy_Lower_Motor_Neuron_Disease</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </STUDY_REF>
+    <DESIGN>
+      <DESIGN_DESCRIPTION/>
+      <SAMPLE_DESCRIPTOR refname="Samp004">
+        <IDENTIFIERS>
+          <SUBMITTER_ID namespace="">Samp004</SUBMITTER_ID>
+        </IDENTIFIERS>
+      </SAMPLE_DESCRIPTOR>
+      <LIBRARY_DESCRIPTOR>
+        <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+        <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+        <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+        <LIBRARY_LAYOUT>
+          <PAIRED NOMINAL_LENGTH="450"/>
+        </LIBRARY_LAYOUT>
+        <LIBRARY_CONSTRUCTION_PROTOCOL>TruSeq_PCRfree</LIBRARY_CONSTRUCTION_PROTOCOL>
+      </LIBRARY_DESCRIPTOR>
+    </DESIGN>
+    <PLATFORM>
+      <ILLUMINA>
+        <INSTRUMENT_MODEL>HiSeq X Ten</INSTRUMENT_MODEL>
+      </ILLUMINA>
+    </PLATFORM>
+  </EXPERIMENT>
+</EXPERIMENT_SET>
